@@ -1,0 +1,13 @@
+
+Table Name:'notifications' (Anuj verma)
+
+1. ALTER TABLE `notifications` ADD `company_id` INT NOT NULL DEFAULT '0' AFTER `status`;
+2. ALTER TABLE `notifications` ADD `created_by` INT NOT NULL DEFAULT '0' AFTER `company_id`;
+3. ALTER TABLE `notifications` ADD `updated_by` INT NOT NULL DEFAULT '0' AFTER `created_by`;
+
+
+Table Name:'projects' (Anuj verma)
+
+ALTER TABLE `projects` ADD `company_id` INT NOT NULL DEFAULT '0' AFTER `status`, ADD `created_by` INT NOT NULL DEFAULT '0' AFTER `company_id`, ADD `updated_by` INT NOT NULL DEFAULT '0' AFTER `created_by`;
+
+
